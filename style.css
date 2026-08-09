@@ -454,3 +454,7 @@ header {
     left: 60vw;
     z-index: -100;
 }
+
+body{
+    overflow-x: hidden;
+}
