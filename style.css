@@ -1,9 +1,3 @@
-
-body{
-    background-image: url(https://www.harrypotter.com/_next/static/images/bg@3x-328bf981778daeb859e69c627ff6589f.jpg);
-    background-size: cover;
-}
-
 #lumas {
     width: 35vw;
     position: absolute;
@@ -14,7 +8,7 @@ body{
 }
 
 #lumas.show {
-    animation: fadeIn 3s ease-in-out forwards;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -254,7 +248,9 @@ main {
 .social-links a[aria-label="TikTok"]::after { content: "TK"; }
 .social-links a[aria-label="Facebook"]::after { content: "f"; font-size: 0.9rem; }
 .social-links a[aria-label="Instagram"]::after { content: "IG"; }
-.social-links a[aria-label="WhatsApp"]::after { content: "WA"; }
+.social-links a[aria-label="GitHub"]::after { 
+    content: "GH"; 
+}
 
 .sr-only {
   position: absolute;
