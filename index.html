@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumas - HackClub</title>
+    <link rel="shortcut icon" href="https://cdn.hackclub.com/019fe7a6-ec3b-7bec-aeb6-d9bb0accf0fe/Untitled%20design%20(13).png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     
 </head>
 <body>
     <audio id="bgm" loop>
         <source src="https://cdn.hackclub.com/019fe739-bc1e-77db-a648-c75f3faacd48/harry_potter_hedwigs.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="clickSfx">
+        <source src="https://cdn.hackclub.com/019fe7b0-e1cf-7734-ab84-d978b11c2d49/mixkit-light-spell-873.wav">
     </audio>
 
     <main>
@@ -29,6 +34,14 @@
         </header>
 
     </main>
+    <button id="musicToggle" class="music-toggle" type="button" aria-label="Toggle background music" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M13 3.75v16.5l-5.25-3.5H4.75A1.75 1.75 0 0 1 3 14.5v-5A1.75 1.75 0 0 1 4.75 7.75h3.25L13 3.75Z"/>
+        <path d="M16.7 8.1a6.2 6.2 0 0 1 0 7.8" class="speaker-wave"/>
+        <path d="M18.8 6a9.6 9.6 0 0 1 0 12" class="speaker-wave"/>
+      </svg>
+    </button>
+
     <footer class="site-footer" aria-labelledby="footer-title">
     <h2 id="footer-title" class="sr-only">Harry Potter site footer</h2>
 
@@ -83,19 +96,5 @@
   </footer>
     
 
-    <script>
-        const bgm = document.getElementById("bgm");
-
-        document.addEventListener("click", () => {
-            bgm.play();
-
-            document.getElementById("cloud1").style.animationPlayState = "running";
-            document.getElementById("cloud2").style.animationPlayState = "running";
-            document.getElementById("cloud3").style.animationPlayState = "running";
-
-            document.getElementById("lumas").classList.add("show");
-        }, { once: true });
-    </script>
-    
 </body>
 </html>
