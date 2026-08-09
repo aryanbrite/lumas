@@ -34,8 +34,51 @@ function toggleMusic() {
   }
 }
 
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function triggerThunderBurst() {
+  const thunder = document.getElementById('th');
+  if (!thunder) {
+    return;
+  }
+
+  const burstCount = getRandomInt(1, 3);
+  const burstGap = 80 + Math.random() * 70;
+
+  for (let index = 0; index < burstCount; index += 1) {
+    window.setTimeout(() => {
+      thunder.classList.remove('thunder-active');
+      void thunder.offsetWidth;
+      thunder.classList.add('thunder-active');
+
+      document.body.classList.remove('thunder-flash');
+      void document.body.offsetWidth;
+      document.body.classList.add('thunder-flash');
+    }, index * burstGap);
+  }
+}
+
+function startThunderLoop() {
+  const thunder = document.getElementById('th');
+  if (!thunder) {
+    return;
+  }
+
+  triggerThunderBurst();
+
+  const playLoop = () => {
+    triggerThunderBurst();
+    window.setTimeout(playLoop, 6000);
+  };
+
+  window.setTimeout(playLoop, 6000);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   startIntroAnimation();
+  startThunderLoop();
   const bgm = document.getElementById('bgm');
   const musicToggle = document.getElementById('musicToggle');
   const clickSfx = document.getElementById('clickSfx');
