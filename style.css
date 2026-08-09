@@ -23,3 +23,68 @@ body{
         opacity: 1;
     }
 }
+
+#cloud1 {
+    position: fixed;
+    width: 50vw;
+    z-index: 4;
+    animation: moveRight1 2s ease-out forwards;
+}
+
+#cloud2 {
+    position: fixed;
+    width: 50vw;
+    z-index: 5;
+    animation: moveRight2 2s ease-out forwards;
+
+}#cloud3 {
+    position: fixed;
+    top: 10vh;
+    width: 50vw;
+    z-index: 4;
+    animation: moveRight3 2s ease-out forwards;
+
+}#cloud4 {
+    position: fixed;
+    left: 10vw;
+    width: 50vw;
+    z-index: 4;
+}
+
+
+@keyframes moveRight1 {
+    from {
+    left: 10vw;
+
+    }
+
+    to {
+    left:-5vw ;
+    }
+}
+
+@keyframes moveRight2 {
+    from {
+    top: 27vh;
+    left: 30vw;
+
+
+    }
+
+    to {
+    top: 35vh;
+
+    left:38vw ;
+    }
+}
+@keyframes moveRight3 {
+    from {
+    left: 40vw;
+
+
+    }
+
+    to {
+    left:50vw ;
+    }
+}
