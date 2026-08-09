@@ -70,10 +70,10 @@ function startThunderLoop() {
 
   const playLoop = () => {
     triggerThunderBurst();
-    window.setTimeout(playLoop, 6000);
+    window.setTimeout(playLoop, 15000);
   };
 
-  window.setTimeout(playLoop, 6000);
+  window.setTimeout(playLoop, 15000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
