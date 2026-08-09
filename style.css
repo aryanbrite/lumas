@@ -448,7 +448,7 @@ header {
 }
 
 #th {
-    position: absolute;
+    position: fixed;
     width: 30vw;
     top: -5vh;
     left: 60vw;
