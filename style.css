@@ -6,14 +6,15 @@ body{
 
 #lumas {
     width: 35vw;
-    position: fixed;
+    position: absolute;
     top: 10vh;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0;
 }
 
-#lumas {
-    animation: fadeIn 3s ease-in-out;
+#lumas.show {
+    animation: fadeIn 3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -26,7 +27,7 @@ body{
 }
 
 #cloud1 {
-    position: fixed;
+    position: absolute;
     width: 50vw;
     z-index: 4;
     animation: moveRight1 2s ease-out forwards;
@@ -34,7 +35,7 @@ body{
 }
 
 #cloud2 {
-    position: fixed;
+    position: absolute;
     width: 50vw;
     z-index: 5;
     animation: moveRight2 2s ease-out forwards;
@@ -42,7 +43,7 @@ body{
 }
 
 #cloud3 {
-    position: fixed;
+    position: absolute;
     top: 10vh;
     width: 50vw;
     z-index: 4;
@@ -51,7 +52,7 @@ body{
 }
 
 #cloud4 {
-    position: fixed;
+    position: absolute;
     left: 10vw;
     width: 50vw;
     z-index: 4;
@@ -88,12 +89,4 @@ body{
     to {
         left: 50vw;
     }
-}
-
-
-#cloud1,
-#cloud2,
-#cloud3,
-#lumas{
-    position: absolute;
 }
