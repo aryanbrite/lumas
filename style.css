@@ -1,0 +1,25 @@
+body{
+    background-image: url(https://www.harrypotter.com/_next/static/images/bg@3x-328bf981778daeb859e69c627ff6589f.jpg);
+    background-size: cover;
+}
+
+#lumas {
+    width: 35vw;
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#lumas {
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
