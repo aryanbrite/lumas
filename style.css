@@ -1,3 +1,4 @@
+
 body{
     background-image: url(https://www.harrypotter.com/_next/static/images/bg@3x-328bf981778daeb859e69c627ff6589f.jpg);
     background-size: cover;
@@ -29,6 +30,7 @@ body{
     width: 50vw;
     z-index: 4;
     animation: moveRight1 2s ease-out forwards;
+    animation-play-state: paused;
 }
 
 #cloud2 {
@@ -36,15 +38,19 @@ body{
     width: 50vw;
     z-index: 5;
     animation: moveRight2 2s ease-out forwards;
+    animation-play-state: paused;
+}
 
-}#cloud3 {
+#cloud3 {
     position: fixed;
     top: 10vh;
     width: 50vw;
     z-index: 4;
     animation: moveRight3 2s ease-out forwards;
+    animation-play-state: paused;
+}
 
-}#cloud4 {
+#cloud4 {
     position: fixed;
     left: 10vw;
     width: 50vw;
@@ -54,37 +60,40 @@ body{
 
 @keyframes moveRight1 {
     from {
-    left: 10vw;
-
+        left: 10vw;
     }
 
     to {
-    left:-5vw ;
+        left: -5vw;
     }
 }
 
 @keyframes moveRight2 {
     from {
-    top: 27vh;
-    left: 30vw;
-
-
+        top: 27vh;
+        left: 30vw;
     }
 
     to {
-    top: 35vh;
-
-    left:38vw ;
+        top: 35vh;
+        left: 38vw;
     }
 }
+
 @keyframes moveRight3 {
     from {
-    left: 40vw;
-
-
+        left: 40vw;
     }
 
     to {
-    left:50vw ;
+        left: 50vw;
     }
+}
+
+
+#cloud1,
+#cloud2,
+#cloud3,
+#lumas{
+    position: absolute;
 }

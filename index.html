@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,17 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumas - HackClub</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
 </head>
 <body>
+    <audio id="bgm" loop>
+        <source src="https://cdn.hackclub.com/019fe739-bc1e-77db-a648-c75f3faacd48/harry_potter_hedwigs.mp3" type="audio/mpeg">
+    </audio>
+
     <main>
         <header>
-        <img id="cloud1" src="https://user-cdn.hackclub-assets.com/019fe725-fea4-72b1-b060-b61cf43ab9c3/%E2%80%94Pngtree%E2%80%94realistic%20cloud%20element_8624528.png" alt="">
-        <img id="cloud2" src="https://user-cdn.hackclub-assets.com/019fe726-10ca-7425-9edf-34df55736571/pngwing.com.png" alt="">
-        <img id="cloud3" src="https://user-cdn.hackclub-assets.com/019fe725-fea4-72b1-b060-b61cf43ab9c3/%E2%80%94Pngtree%E2%80%94realistic%20cloud%20element_8624528.png" alt="">
+            <img id="cloud1" src="https://user-cdn.hackclub-assets.com/019fe725-fea4-72b1-b060-b61cf43ab9c3/%E2%80%94Pngtree%E2%80%94realistic%20cloud%20element_8624528.png" alt="">
+            <img id="cloud2" src="https://user-cdn.hackclub-assets.com/019fe726-10ca-7425-9edf-34df55736571/pngwing.com.png" alt="">
+            <img id="cloud3" src="https://user-cdn.hackclub-assets.com/019fe725-fea4-72b1-b060-b61cf43ab9c3/%E2%80%94Pngtree%E2%80%94realistic%20cloud%20element_8624528.png" alt="">
 
-        <img src="https://cdn.hackclub.com/019fe716-c49e-75e8-b5d7-c9bf02710fd1/Untitled%20design%20(12).png" alt="" id="lumas" >
-
+            <img src="https://cdn.hackclub.com/019fe716-c49e-75e8-b5d7-c9bf02710fd1/Untitled%20design%20(12).png" alt="" id="lumas">
         </header>
     </main>
+
+    <script>
+        const bgm = document.getElementById("bgm");
+
+        document.addEventListener("click", () => {
+            bgm.play();
+
+            document.getElementById("cloud1").style.animationPlayState = "running";
+            document.getElementById("cloud2").style.animationPlayState = "running";
+            document.getElementById("cloud3").style.animationPlayState = "running";
+        }, { once: true });
+    </script>
 </body>
 </html>
+
