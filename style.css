@@ -289,6 +289,152 @@ main {
 
 }
 
+.timeline-section {
+  position: relative;
+  padding: 5rem 1.5rem 7rem;
+  background: linear-gradient(180deg, rgba(17, 17, 41, 0.98) 0%, rgba(9, 9, 24, 1) 100%);
+}
+
+.timeline-intro {
+  width: min(100%, 760px);
+  margin: 0 auto 2.75rem;
+  text-align: center;
+}
+
+.timeline-kicker {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #d3b06a;
+}
+
+.timeline-intro h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: #f7e8b2;
+}
+
+.timeline-track {
+  position: relative;
+  width: min(100%, 1040px);
+  margin: 0 auto;
+  min-height: 1100px;
+}
+
+.timeline-card {
+  position: absolute;
+    background-image: url("https://cdn.hackclub.com/019ff0ca-ee73-738a-8e20-2c39acb3ad93/Untitled%20design%20(23).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 30vw;
+  padding-left: 5vw;
+  padding-top: 5vw;
+
+  
+}
+
+.timeline-card h3 {
+  margin: 0.2rem 0 0.6rem;
+  font-size: 1.2rem;
+  color: #14171C;
+}
+
+.timeline-card p {
+  margin: 0;
+  color: rgba(247, 232, 178, 0.82);
+  line-height: 1.6;
+}
+
+.card-index {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #d3b06a;
+}
+
+.card-1 {
+  left: 2%;
+  top: 2%;
+}
+
+.card-2 {
+  right: 3%;
+  top: 26%;
+}
+
+.card-3 {
+  left: 8%;
+  top: 52%;
+}
+
+.card-4 {
+  right: 2%;
+  top: 78%;
+}
+
+.timeline-plane {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30vw;
+
+  z-index: 3;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  will-change: left, top, transform;
+}
+
+.timeline-plane img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-origin: center center;
+  filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.35));
+}
+
+@media (max-width: 760px) {
+  .timeline-track {
+    min-height: 1400px;
+  }
+
+  .timeline-card {
+    position: absolute;
+    width: min(86%, 320px);
+    
+  }
+
+  .card-1 {
+    left: 4%;
+    top: 2%;
+  }
+
+  .card-2 {
+    right: 4%;
+    top: 30%;
+  }
+
+  .card-3 {
+    left: 6%;
+    top: 58%;
+  }
+
+  .card-4 {
+    right: 4%;
+    top: 86%;
+  }
+
+  .timeline-plane {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 .site-footer {
   width: 100%;
   padding: 4rem 2.5rem 5rem;
@@ -553,4 +699,9 @@ body{
   100% {
     transform: translate(0, 0);
   }
+}
+
+
+#page1 {
+  width: 40vw;
 }
