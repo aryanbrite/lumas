@@ -362,6 +362,8 @@ main {
 .card-1 {
   left: 2%;
   top: 2%;
+  z-index: 4;
+
 }
 
 .card-2 {
@@ -393,6 +395,7 @@ main {
   pointer-events: none;
   transform: translate(-50%, -50%);
   will-change: left, top, transform;
+  z-index: 1;
 }
 
 .timeline-plane img {
