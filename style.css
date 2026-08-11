@@ -647,7 +647,10 @@ body{
 }
 
 #op {
-    width: 20vw;
+  position: relative;
+  top: -30vh;
+  right: -20vw;
+    width: 15vw;
 }
 
 #op1 {
@@ -709,4 +712,23 @@ body{
 
 #page1 {
   width: 40vw;
+}
+
+#spark{
+  position: relative;
+  width: 10vw;
+  top: -4vh;
+  right: -18vw;
+}
+
+#op2 {
+  position: relative;
+  width: 30vw;
+  top: -62vh;
+  left: -27vw;
+}
+
+#op1 {
+  position: relative;
+  top: 4vh;
 }
