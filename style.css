@@ -332,6 +332,7 @@ main {
     width: 30vw;
   padding-left: 5vw;
   padding-top: 5vw;
+  padding-right: 2vw;
 
   
 }
@@ -344,7 +345,7 @@ main {
 
 .timeline-card p {
   margin: 0;
-  color: rgba(247, 232, 178, 0.82);
+  color: #0D0F14;
   line-height: 1.6;
 }
 
@@ -371,11 +372,15 @@ main {
 .card-3 {
   left: 8%;
   top: 52%;
+  padding-right: 4vw;
+
 }
 
 .card-4 {
   right: 2%;
   top: 78%;
+  padding-right: 4vw;
+
 }
 
 .timeline-plane {
