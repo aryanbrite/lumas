@@ -53,9 +53,10 @@ function triggerThunderBurst() {
       void thunder.offsetWidth;
       thunder.classList.add('thunder-active');
 
-      document.body.classList.remove('thunder-flash');
-      void document.body.offsetWidth;
-      document.body.classList.add('thunder-flash');
+      const hero = document.querySelector('.hero');
+      hero?.classList.remove('thunder-flash');
+      void hero?.offsetWidth;
+      hero?.classList.add('thunder-flash');
     }, index * burstGap);
   }
 }
