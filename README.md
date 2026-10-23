@@ -31,7 +31,7 @@
 
 ## Why we made this project
 
-Just for fun
+i was thinking of making a project with a real weather type animation hust using css. wanted to make something horror as well :D
 
 ## Tech Stack
 - html
