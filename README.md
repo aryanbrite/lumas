@@ -18,12 +18,14 @@
 
 > [!IMPORTANT]
 > **AI Usage:** 
+> the actual coding time on this project is 4 hours actually but i made another projects with the same folder name thats why its more.
 
 > I use ChatGPT occasionally for CSS reference, and I sometimes use Copilot very little for some debugging. 
 
 
 > [!NOTE]
 >
+> the actual coding time on this project is 4 hours actually but i made another projects with the same folder name thats why its more.
 > This is just a landing page For YSWS. I know that it's not responsive yet, but I'll fix it in a while. 
 
 ## Screenshot
